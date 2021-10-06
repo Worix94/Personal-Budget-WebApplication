@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Personal Budget</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content=""/>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	
+	<script type="text/Javascript">
+	
+		function rejestracja()
+		{
+			var login = document.getElementById("login").value;
+			var email = document.getElementById("email").value;
+			var haslo = document.getElementById("haslo").value;
+			
+			document.getElementById("header").innerHTML = "Logowanie";
+		}
+	
+	</script>
+</head>
+
+<body>
+	<div id="header"> Rejestracja </div>
+	
+	<div id="nav">
+	<br />
+			<div class="optionL">Dodaj przychód</div> 
+			<div class="optionL">Dodaj wydatek</div>
+			<div class="optionL">Przeglądaj bilans</div>
+			<div class="optionL">Ustawienia </div>
+			<div class="optionL">Wyloguj się </div>
+			
+	</div>
+		
+	</div>
+
+	<div id="container">
+		<form>
+			<input type="login" placeholder="login" onfocus="this.placeholder=''" onblur="this.placeholder='login'">
+			
+			<input type="email" placeholder="e-mail" onfocus="this.placeholder=''" onblur="this.placeholder='e-mail'">
+				
+			<input type="password" placeholder="hasło" onfocus="this.placeholder=''" onblur="this.placeholder='hasło'">
+				
+			<input type="submit" value="Zarejestruj się" onclick="rejestracja()">
+			
+		</form>
+	</div>
+	<div style="clear: both"></div>
+
+
+</body>
+
+</html>
