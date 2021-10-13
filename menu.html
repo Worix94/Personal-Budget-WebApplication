@@ -8,22 +8,12 @@
 	<meta name="keywords" content=""/>
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	
-	<script type="text/Javascript">
+	<script src="funkcje.js"></script>
 	
-		function rejestracja()
-		{
-			var login = document.getElementById("login").value;
-			var email = document.getElementById("email").value;
-			var haslo = document.getElementById("haslo").value;
-			
-			document.getElementById("header").innerHTML = "Logowanie";
-		}
-	
-	</script>
 </head>
 
 <body>
-	<div id="header"> Rejestracja </div>
+	<div id="header"> Menu Użytkownika </div>
 	
 	<div id="nav">
 	<br />
@@ -31,13 +21,13 @@
 			<div class="optionL">Dodaj wydatek</div>
 			<div class="optionL">Przeglądaj bilans</div>
 			<div class="optionL">Ustawienia </div>
-			<div class="optionL">Wyloguj się </div>
+			<a href="logowanie.html"><div class="optionL">Wyloguj się </div></a>
 			
 	</div>
 		
 	</div>
 
-	<div id="container">
+	<div id="content" style="display:none;">
 		<form>
 			<input type="login" placeholder="login" onfocus="this.placeholder=''" onblur="this.placeholder='login'">
 			
@@ -45,7 +35,7 @@
 				
 			<input type="password" placeholder="hasło" onfocus="this.placeholder=''" onblur="this.placeholder='hasło'">
 				
-			<input type="submit" value="Zarejestruj się" onclick="rejestracja()">
+			<input type="submit" value="Zarejestruj się" onclick="rejestracja()" />
 			
 		</form>
 	</div>

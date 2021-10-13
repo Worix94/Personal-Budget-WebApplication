@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Personal Budget</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content=""/>
+	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	
+	<script src="funkcje.js"></script>
+	
+	
+</head>
+
+<body>
+	<div id="container">
+		<div id="header"> Rejestracja </div>
+	
+		<div id="nav" style="display:none;">
+			<br />
+			<div class="optionL">Dodaj przychód</div> 
+			<div class="optionL">Dodaj wydatek</div>
+			<div class="optionL">Przeglądaj bilans</div>
+			<div class="optionL">Ustawienia </div>
+			<div class="optionL">Wyloguj się </div>
+		</div>
+
+		<div id="content">
+	
+			<input type="login" id="login" placeholder="login" onfocus="this.placeholder=''" onblur="this.placeholder='login'">
+				
+			<input type="password" id="haslo" placeholder="hasło" onfocus="this.placeholder=''" onblur="this.placeholder='hasło'">
+				
+			<input type="submit" value="Zarejestruj się" onclick="rejestracja()" />
+			
+		</div>
+	<div style="clear: both"></div>
+	</div>
+
+</body>
+
+</html>
