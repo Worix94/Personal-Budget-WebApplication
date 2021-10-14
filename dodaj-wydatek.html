@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Personal Budget</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content=""/>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="funkcje.js"></script>
+	
+</head>
+
+<body>
+	<div id="header"> Dodaj wydatek </div>
+	
+	<div id="nav">
+	<br />
+			<a href="dodaj-przychod.html" ><div class="optionL">Dodaj przychód</div></a>
+			<a href="dodaj-wydatek.html"><div class="optionL">Dodaj wydatek</div></a>
+			<a href="przegladaj-bilans.html"><div class="optionL">Przeglądaj bilans</div></a>
+			<div class="optionL">Ustawienia </div>
+			<a href="logowanie.html"><div class="optionL">Wyloguj się </div></a>
+			
+	</div>
+		
+	</div>
+
+	<div id="content2" >
+		<form>
+			<div class="record">Kwota: 
+				<input type="kwota" style="margin-left:70px;" placeholder="kwota" onfocus="this.placeholder=''" onblur="this.placeholder='kwota'">
+			</div>
+			
+			<div class="record" id="data" >
+				Data: <input type="date" style="margin-left:78px;" >
+			</div>
+				
+			<div class="record">Sposób płatności:	 
+				<input type="radio" id="contactChoice1" name="contact" >
+									<label for="contactChoice1">Gotówka</label>
+								<input type="radio" id="contactChoice2"name="contact" > 
+									<label for="contactChoice1">Karta debetowa</label><br/>
+								<input type="radio" id="contactChoice3" name="contact" >
+									<label for="contactChoice1">Karta kredytowa</label>
+								<input type="radio" id="contactChoice4" name="contact" >
+									<label for="contactChoice1">Inne</label>
+			</div>
+			
+			<div class="record">Kategoria
+			<select name="kategoria" id="kategoria" >
+					<option>Jedzenie</option><option>Mieszkanie</option> 
+					<option>Transport</option><option>Telekomunikacja</option> 
+					<option>Opieka zdrowotna</option><option>Ubranie</option> 
+					<option>Higiena</option><option>Dzieci</option> 
+					<option>Rozrywka</option><option>Wycieczka</option> 
+					<option>Szkolenia</option><option>Książki</option> 
+					<option>Oszczędności</option><option>Na złotą jesień, czyli emeryturę</option> 
+					<option>Spłata długów</option><option>Darowizna</option> 
+					<option>Inne wydatki</option> 
+			</select>
+			</div>
+			<div class="record">Komentarz:	    
+				<input type="komentarz" style="margin-left:40px;" placeholder="komentarz" onfocus="this.placeholder=''" onblur="this.placeholder='komentarz'">
+			</div>
+				
+			<input type="submit" style="margin-left:160px;" value="Dodaj" onclick="dodaj()" />
+			
+		</form>
+	</div>
+	<div style="clear: both"></div>
+
+
+</body>
+
+</html>

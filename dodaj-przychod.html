@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Personal Budget</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content=""/>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="funkcje.js"></script>
+	
+</head>
+
+<body>
+	<div id="header"> Dodaj przychód </div>
+	
+	<div id="nav">
+	<br />
+			<a href="dodaj-przychod.html" ><div class="optionL">Dodaj przychód</div></a>
+			<a href="dodaj-wydatek.html"><div class="optionL">Dodaj wydatek</div></a>
+			<a href="przegladaj-bilans.html"><div class="optionL">Przeglądaj bilans</div></a>
+			<div class="optionL">Ustawienia </div>
+			<a href="logowanie.html"><div class="optionL">Wyloguj się </div></a>
+			
+	</div>
+		
+	</div>
+
+	<div id="content2" style="float: left;">
+		<form>
+			<div class="record" >Kwota: 
+				<input type="kwota" style="margin-left:70px;" placeholder="kwota" onfocus="this.placeholder=''" onblur="this.placeholder='kwota'">
+			</div>
+			
+			<div class="record" id="data" >
+				Data: <input type="date" style="margin-left:78px;" >
+			</div>
+				
+			<div class="record">Kategoria:	 
+				<input type="radio" id="contactChoice1" name="contact" >
+									<label for="contactChoice1">Wynagrodzenie</label>
+								<input type="radio" id="contactChoice2"name="contact" > 
+									<label for="contactChoice1">Odsetki bankowe</label><br/>
+								<input type="radio" id="contactChoice3" name="contact" >
+									<label for="contactChoice1">Sprzedaż na Allegro</label>
+								<input type="radio" id="contactChoice4" name="contact" >
+									<label for="contactChoice1">Inne</label>
+			</div>
+			
+			<div class="record">Komentarz:	    
+				<input type="komentarz" style="margin-left:40px;" placeholder="komentarz" onfocus="this.placeholder=''" onblur="this.placeholder='komentarz'">
+			</div>
+				
+			<input type="submit" style="margin-left:160px;" value="Dodaj" onclick="dodaj()" />
+			
+		</form>
+	</div>
+	<div style="clear: both"></div>
+
+
+</body>
+
+</html>
