@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Personal Budget</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content=""/>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="funkcje.js"></script>
+	
+	
+</head>
+
+<body>
+	<div id="header"> Bilans </div>
+	
+	<div id="nav">
+	<br />
+			<a href="dodaj-przychod.html" ><div class="optionL">Dodaj przychód</div></a>
+			<a href="dodaj-wydatek.html"><div class="optionL">Dodaj wydatek</div></a>
+			<a href="przegladaj-bilans.html"><div class="optionL">Przeglądaj bilans</div></a>
+			<div class="optionL">Ustawienia </div>
+			<a href="logowanie.html"><div class="optionL">Wyloguj się </div></a>
+			
+	</div>
+		
+	</div>
+
+	<div id="content2" >
+		<form>
+			<div class="record">Okres rozliczeniowy:
+			<select name="okres" id="okres">
+					<option value="bieżący" selected>Bieżący miesiąc</option>
+					<option value="poprzedni miesiac">Poprzedni miesiąc</option> 
+					<option value="poprzedni rok">Poprzedni rok</option>
+					<option value="niestandarwoy">Niestandardowy</option> 
+			</select>
+			</div>
+			
+			<div class="table">
+				<table class="table1" width="300" align="left" >
+					<tr>
+						<td >Wynagrodzenie</td>
+						<td>4000</td>
+					</tr>
+					<tr>
+						<td>Odsetki</td>
+						<td>1000</td>
+					</tr>
+					<tr>
+						<td>Sprzedaż na allegro</td>
+						<td>500</td>
+					</tr>
+					<tr>
+						<td>Inne</td>
+						<td>0</td>
+					</tr>
+				</table>
+			</div>
+			<div class="table">
+				<table class="table1" width="300" style="margin-left:50px;" >
+					<tr>
+						<td >Jedzenie</td>
+						<td>3000</td>
+					</tr>
+					<tr>
+						<td>Mieszkanie</td>
+						<td>1000</td>
+					</tr>
+					<tr>
+						<td>Transport</td>
+						<td>500</td>
+					</tr>
+					<tr>
+						<td>Książki</td>
+						<td>200</td>
+					</tr>
+					<tr>
+						<td>Dzieci</td>
+						<td>0</td>
+					</tr>
+				</table>
+			</div>
+			<div style="clear: both"></div>
+			<div class="record" id="suma przychodow">Suma przychodów wynosi: 5500zł</div>
+			<div class="record" id="suma wydatkow">Suma wydatkow wynosi: 4700zł</div>
+			<div class="record" id="bilans">Bilans wynosi: +800zł</div>
+			<div id="piechart"></div>
+			
+		</form>
+	</div>
+	<div style="clear: both"></div>
+
+
+</body>
+
+</html>
